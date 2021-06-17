@@ -1,0 +1,393 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Manrope", sans-serif;
+  /* box-sizing: border-box; */
+}
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tophd {
+  /* margin-top: 3rem; */
+  padding: 0.2rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+.headings {
+  font-size: 1.8rem;
+  color: rgb(19, 0, 48);
+}
+.text {
+  font-size: 0.85rem;
+  color: rgb(138, 137, 137);
+  font-weight: bolder;
+  text-align: center;
+}
+#text1 {
+  margin: 1.2rem;
+}
+#header {
+  /* margin-top: 2rem; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 32vh;
+}
+#bg {
+  position: absolute;
+  /* top: 0; */
+  /* background: url('bg-pattern.svg'); */
+  z-index: -1;
+  /* background-size: 100%; */
+  width: 100%;
+  height: 100vh;
+}
+#circle {
+  position: absolute;
+  top: 2;
+  z-index: -1;
+  height: 68%;
+  width: 33%;
+
+  /* width: 60%; */
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 60vh;
+  background-color: white;
+  box-shadow: -1px 1px 60px rgb(224, 224, 224);
+  border-radius: 4px;
+  
+}
+.text1 {
+  font-size: 0.8em;
+  font-weight: bolder;
+  color: rgb(138, 137, 137);
+}
+#price {
+  color: rgb(25, 1, 61);
+  font-weight: bolder;
+  font-size: 1.8em;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 85%;
+  height: 0.5em;
+  background: linear-gradient(
+    to right,
+    rgb(93, 234, 220) 50%,
+    rgb(233, 222, 222) 50%
+  );
+  margin-top: 1em;
+  opacity: 0.7;
+  outline: none;
+}
+.slider:focus {
+  outline: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  background: rgb(55, 194, 180);
+  /* margin-top: -0.4rem; */
+  /* border: 1px solid #3cfdfd; */
+  cursor: pointer;
+  box-shadow: 1px 1px 53px rgb(43, 255, 234);
+  background-image: url("slider.svg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+#content-1 {
+  grid-area: cont1;
+  display: flex;
+  align-items: center;
+  margin-top: 1.8rem;
+  margin-left: 1.8em;
+}
+#content-2 {
+  grid-area: cont2;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+#slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  grid-area: slider;
+}
+.box1 {
+  display: grid;
+  grid-template-areas:
+    "cont1 cont2"
+    "slider slider";
+  margin-bottom: 2rem;
+}
+#cont2inner {
+  margin-top: 1.3rem;
+  margin-right: 1.8em;
+}
+#minus {
+  display: none;
+}
+.box2 {
+  display: grid;
+  grid-template-areas: 
+  ". . . billbox";
+  /* justify-content: center; */
+  /* align-items: flex-end; */
+  /* flex-direction: row-reverse; */
+  /* position: absolute;
+  right: 10rem; */
+  width: 100%;
+}
+.billing-box {
+  width: 100%;
+  float: right;
+  display: flex;
+  align-items: flex-end;
+  /* position: absolute;
+  right: 0; */
+  grid-area: billbox;
+}
+.textbill {
+  font-size: 0.6em;
+  font-weight: bolder;
+  color: rgb(138, 137, 137);
+}
+#discount {
+  font-size: 0.6em;
+  font-weight: bolder;
+  background: rgb(254, 224, 216);
+  color: #ff8c66;
+  border-radius: 0.5em;
+  padding: 0em 0.5em;
+  margin: 0em 1em;
+  /* margin-top: 1rem; */
+}
+
+.text-list {
+  font-size: 0.6em;
+  font-weight: bolder;
+  color: rgb(138, 137, 137);
+}
+
+ul li {
+  list-style-image: url("icon-check.svg");
+}
+#btn1 {
+  padding: 0.7rem 2.2rem;
+  outline: none;
+  cursor: pointer;
+  background: rgb(33, 1, 82);
+  color: white;
+  border-radius: 3rem;
+  border: 0px;
+  font-size: 0.8em;
+  /* position: absolute;
+      top: 40%;
+      right: 3rem; */
+  /* margin-top: 0.8em;
+  margin-right: 3em; */
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btn1:hover {
+  background: rgb(94, 11, 219);
+}
+
+#box3 {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  /* align-items: center; */
+  border-top: 0.07px solid rgb(211, 211, 211, 0.6);
+  margin-top: 2.4rem;
+}
+
+#li1 {
+  margin: 30% 0% 12.5% 0%;
+}
+#li2 {
+  margin: 12.5% 0% 12.5% 0%;
+}
+#li3 {
+  margin: 12.5% 0% 25% 0%;
+}
+
+@media (max-width: 990px) {
+  #circle {
+    width: 20%;
+  }
+  #container {
+    width: 60vw;
+  }
+}
+@media (max-width: 692px) {
+  #circle {
+    width: 25%;
+  }
+  #container {
+    width: 70vw;
+  }
+}
+@media (max-width: 632px) {
+  #circle {
+    width: 25%;
+  }
+  #container {
+    width: 80vw;
+    height: 65vh;
+  }
+  .box1 {
+    display: grid;
+    grid-template-areas:
+      "cont1"
+      "slider"
+      "cont2";
+    margin-bottom: 1.4rem;
+  }
+  #content-1 {
+    grid-area: cont1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.8rem;
+    margin-left: 0em;
+  }
+  #content-2 {
+    grid-area: cont2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #cont2inner {
+    margin-top: 0.7rem;
+    margin-right: 0em;
+  }
+  #box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 2.8rem;
+  }
+  #li1 {
+    margin: 0.6rem;
+  }
+  #li2 {
+    margin: 0.6rem;
+  }
+  #li3 {
+    margin: 0.6rem;
+  }
+  #list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  #circle {
+    width: 25%;
+  }
+  #container {
+    width: 87vw;
+    height: 65vh;
+  }
+  #distext {
+    display: none;
+  }
+  #minus {
+    display: block;
+  }
+}
+@media (max-width: 420px) {
+  #circle {
+    width: 29%;
+  }
+  .headings {
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 0.7rem;
+  }
+  .slider {
+    width: 80%;
+  }
+  #container {
+    width: 90vw;
+  }
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 1.8rem;
+  height: 1rem;
+  background-color: rgb(233, 222, 222);
+  border-radius: 30px;
+  border: 0.5px solid rgb(224, 220, 220);
+}
+
+/* After slide changes */
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  top: 0.06rem;
+  left: 0.06rem;
+  transition: all 0.5s;
+}
+
+/* Toggle text
+  p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+  }
+           */
+/* Checkbox cheked effect */
+.checkbox:checked + .toggle::after {
+  left: 0.8rem;
+}
+
+/* Checkbox cheked toggle label bg color */
+.checkbox:checked + .toggle {
+  background-color: rgb(93, 234, 220);
+}
+
+/* Checkbox vanished */
+.checkbox {
+  display: none;
+}
+
+.plan {
+  padding: 0em 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+.toggle:hover {
+  cursor: pointer;
+}

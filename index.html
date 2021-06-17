@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylenew.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="bg1.PNG" id="bg" alt="" />
+    <header id="header">
+      <img src="pattern-circles.svg" alt="" id="circle" />
+      <div class="topheading">
+        <h2 class="headings" id="tophd">Simple, traffic-based pricing</h2>
+      </div>
+      <p class="text" id="text1">
+        Sign up for our thirty day trial. No credit card required
+      </p>
+    </header>
+    <section id="container">
+      <div class="box1">
+        <div id="content-1" class="text1">
+          <span id="views">100K</span>
+          <span>&nbsp;PAGEVIEWS</span>
+        </div>
+
+        <div id="content-2">
+          <div id="cont2inner">
+            <span id="price">$16.00</span>
+            <span class="text1">&nbsp;/month</span>
+          </div>
+        </div>
+        <div id="slider">
+          <input
+            type="range"
+            min="20"
+            max="100"
+            step="20"
+            value="60"
+            id="inp"
+            class="slider"
+          />
+        </div>
+      </div>
+      <div class="box2">
+        <div class="billing-box">
+          <div class="textbill">Monthly Billing</div>
+          <span class="plan">
+            <input type="checkbox" id="switch" class="checkbox" />
+            <label for="switch" class="toggle" id="x"></label>
+          </span>
+          <div class="textbill">Monthly Billing</div>
+          <div id="discount">
+            <p id="minus">-25%</p>
+            <p id="distext">25% Discount</p>
+          </div>
+        </div>
+      </div>
+      <div id="box3">
+        <div id="list" class="text-list">
+          <ul>
+            <li id="li1">Unlimited websites</li>
+            <li id="li2">100% data ownership</li>
+            <li id="li3">Email reports</li>
+          </ul>
+        </div>
+        <div class="button">
+          <div id="button">
+            <button id="btn1">Start my trial</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="price.js"></script>
+</html>
